@@ -12,7 +12,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @Configuration
 public class SwaggerConfiguration {
-    private static final String SWAGGER_API_VERSION = "2.0";
+    private static final String SWAGGER_API_VERSION = "1.0";
     private static final String LICENSE_TEXT = "Lorem ipsum";
     private static final String title = "Spring Boot Start by Oleksandr Teliuk";
     private static final String description = "Documentation for the project";
