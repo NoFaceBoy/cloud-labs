@@ -18,8 +18,6 @@ RUN mvn clean install -D maven.test.skip=true
 # set base image for second stage
 FROM eclipse-temurin:17.0.8.1_1-jre
 # set deployment directory
-EXPOSE 8080
-
 WORKDIR ./
 # copy over the built artifact from the maven image
 COPY --from=stage1 target/imdb.jar ./imdb.jar
